@@ -1,7 +1,6 @@
-# SafeZone
 # 🛡️ SafeZone App
 
-Hey! This is **SafeZone**, a personal safety app I built using React Native (Expo) and Firebase — fully powered by **free tools** and designed for real-time emergency support.
+This is **SafeZone**, a personal safety app I built using React Native (Expo) and Firebase — fully powered by **free tools** and designed for real-time emergency support.
 
 ### 🚨 What It Does
 
@@ -21,7 +20,7 @@ Hey! This is **SafeZone**, a personal safety app I built using React Native (Exp
 - React Native Maps
 - Expo Modules: Location, AV, Speech, Notifications
 - Voice Recognition: `@react-native-voice/voice`
-- Optional: Redux Toolkit
+- Redux Toolkit
 
 ---
 
@@ -37,13 +36,9 @@ Hey! This is **SafeZone**, a personal safety app I built using React Native (Exp
 ### 🛠 Features in Progress
 
 - UI polish and Figma-based redesign
-- Firebase Functions (still on free tier)
+- Firebase Functions
 - SMS fallback (maybe!)
 
 ---
 
-### 📱 Build & Share
 
-```bash
-npm install -g eas-cli
-eas build --platform android
