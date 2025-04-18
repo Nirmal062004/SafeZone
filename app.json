@@ -1,28 +1,32 @@
 {
   "expo": {
-    "name": "SafeZoneApp",
-    "slug": "SafeZoneApp",
+    "name": "SafeZone",
+    "slug": "safezone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
+      "bundleIdentifier": "com.example.safezone",
+      "buildNumber": "1.0.0",
       "supportsTablet": true,
       "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "We need your location to show the map"
+        "NSLocationWhenInUseUsageDescription": "SafeZone needs access to your location to show nearby safe places like hospitals and police stations."
       }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
+      "package": "com.example.safezone",
+      "versionCode": 1,
       "permissions": [
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION"
@@ -30,6 +34,13 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A free women's safety app that shows nearby hospitals, police stations, and government offices using OpenStreetMap.",
+    "privacy": "public",
+    "dependencies": {
+      "expo-location": "^14.0.0",
+      "react-native-webview": "^11.23.1"
+    },
+    "platforms": ["ios", "android", "web"]
   }
 }
