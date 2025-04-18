@@ -1,23 +1,32 @@
 // Import the functions you need from the SDKs you need
+<<<<<<< HEAD
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';  // Firebase Authentication
 import { getFirestore } from 'firebase/firestore';  // Firestore Database
+=======
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+>>>>>>> 47cda08b972f56a2edb922e140c532d54c9a89b2
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCKCdJbt5P0KHOu-_qmPeNreeu7-wk_BxA",
-  authDomain: "safe-zone-45938.firebaseapp.com",
-  projectId: "safe-zone-45938",
-  storageBucket: "safe-zone-45938.firebasestorage.app",
-  messagingSenderId: "562656434078",
-  appId: "1:562656434078:web:9a15856c687e27cadf288f",
-  measurementId: "G-HZTQKF9LDX"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
+  measurementId: "YOUR_MEASUREMENT_ID" // Optional
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+<<<<<<< HEAD
 
 // Initialize Firebase Authentication & Firestore
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 
+=======
+const analytics = getAnalytics(app);
+>>>>>>> 47cda08b972f56a2edb922e140c532d54c9a89b2
