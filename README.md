@@ -33,11 +33,11 @@ This is **SafeZone**, a personal safety app I built using React Native (Expo) an
 
 ---
 
-### 🛠 Features in Progress
+### 🛠 Features
 
 - UI polish and Figma-based redesign
 - Firebase Functions
-- SMS fallback (maybe!)
+- SMS fallback
 
 ---
 
